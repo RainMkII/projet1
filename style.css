@@ -1,0 +1,71 @@
+body {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+    height: 98px;
+
+}
+nav a {
+    margin-left: 60px;
+    
+}
+
+nav a:hover {
+    border-top: 1px solid blue;
+    border-spacing: 10px;
+
+}
+
+
+
+
+.recherche {
+    display: flex;
+    flex-direction: row;
+}
+
+.filtre {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.filtre-icon {
+    border-radius: 20px 20px 20px 20px ;
+    border: 1px solid gray;
+    
+}
+
+.hébergement-cadre {
+    border-radius: 20px 20px 20px 20px;
+    border: 1px solid gray;
+    background-color: rgb(201, 201, 201);
+    
+}
+
+.flex-hé {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 15px;
+}
+
+.image-hé {
+    width: 246px;
+    height: 124px;
+    border-radius: 20px 20px 0px 0px;
+    border: 4px solid white;
+}
+.cadre-bas {
+    border-radius: 0px 0px 20px 20px;
+    border: 4px solid white;
+    background-color: white;
+}
