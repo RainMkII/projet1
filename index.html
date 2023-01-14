@@ -5,31 +5,35 @@
     <meta charset="utf-8">
     <title>Booki</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="index.html">
-                <img src="image/logo.svg">
+                <img src="image/logo.svg" class="logo-nav">
             </a>
             <div>
-                <a href="">Hébergement</a>
-                <a href="">Activité</a>
+                <a href="#Hébergement">Hébergement</a>
+                <a href="#Activité">Activité</a>
             </div>
         </nav>
     </header>
 
 
 <main>
-    <section>
+    <section class="annonce">
         <h1>Trouvez hébergement pour des vacances de rêve</h1>
         <p>En plein centre-ville ou en pleine nature</p>
         <!-- je pense que c'est la meilleurs solution sur cette section-->
     </section>
     
     <section class="recherche">
-        <img src="image/map.svg">
+        <div class="logo-recherche">
+            <img src="image/map.svg">
+        </div>
         <form action="" method="get">
             <label for="recherche"></label>
             <input type="search" name="recherche" id="recherche" required>
@@ -39,8 +43,9 @@
     </section>
 
     <section>
-        <h2>Filtres</h2>
-        <div class="filtre">
+      
+        <div class="filtre"> 
+            <h2>Filtres</h2>
                 <div class="filtre-icon">
                     <img src="image/dolars.svg">
                         <a href="" >Économique </a>
@@ -65,10 +70,10 @@
         <!--J'ai crée plusieur div pour pouvoir par la suite mieux les agencé avec le css -->
 
         <p>Plus de 500 logements sont disponibles dans cette ville</p>
-        <section class="hé-po">
-        <section></section>
+
+    <section class="hé-po">
         <section class="hébergement-cadre">
-            <h2>Hébergement à Marseille</h2>
+            <h2 id="Hébergement">Hébergement à Marseille</h2>
                 <div class="flex-hé">
                     <div class="hébergement">
                         <div>
@@ -186,61 +191,66 @@
         </section>
 
         <section class="populaire-cadre">
-            <h2> Les plus populaires</h2>
+            <h2> Les plus populaires</h2>  
+        <div class="pop-contenue">
             <div class="pop-centre">
                     <div>
                         <img src="image/Images Booki/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="img-pop" >
                     </div>
+                        <div class="pop-contenue2">
+                            <div>
+                                <a href="">Hotêl le soleil du matin</br>
+                                Nuit a partir de 128€ </a>
+                            </div>
 
-                    <div>
-                        <a href="">Hotêl le soleil du matin</br>
-                        Nuit a partir de 128€ </a>
-                    </div>
-
-                    <div>
-                        <img src="image/star.svg">
-                        <img src="image/star.svg">
-                        <img src="image/star.svg">
-                        <img src="image/star.svg">
-                    </div>
+                            <div>
+                                <img src="image/star.svg">
+                                <img src="image/star.svg">
+                                <img src="image/star.svg">
+                                <img src="image/star.svg">
+                            </div>
+                        </div>
             </div>
             
-            <div>
+            <div class="pop-centre">
                 <div>
                     <img src="image/Images Booki/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" class="img-pop" >
                 </div>
+                    <div class="pop-contenue2">
+                        <div>
+                            <a href="">Chambres d'hôtes Au coeur de l'eau</br>
+                            Nuit a partir de 71€ </a>
+                        </div>
 
-                <div>
-                    <a href="">Chambres d'hôtes Au coeur de l'eau</br>
-                    Nuit a partir de 71€ </a>
-                </div>
-
-                <div>
-                    <img src="image/star.svg">
-                    <img src="image/star.svg">
-                    <img src="image/star.svg">
-                    <img src="image/star.svg">
-                </div>
+                        <div>
+                            <img src="image/star.svg">
+                            <img src="image/star.svg">
+                            <img src="image/star.svg">
+                            <img src="image/star.svg">
+                        </div>
+                    </div>
             </div>
 
-            <div>
+            <div class="pop-centre">
                 <div>
                     <img src="image/Images Booki/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" class="img-pop" >
                 </div>
+                    <div class="pop-contenue2">
+                        <div>
+                            <a href="">Hotêl Bleu et Blanc</br>
+                            Nuit a partir de 68€ </a>
+                        </div>
 
-                <div>
-                    <a href="">Hotêl Bleu et Blanc</br>
-                    Nuit a partir de 68€ </a>
-                </div>
-
-                <div>
-                    <img src="image/star.svg">
-                    <img src="image/star.svg">
-                    <img src="image/star.svg">
-                    <img src="image/star.svg">
-                </div>
+                        <div>
+                            <img src="image/star.svg">
+                            <img src="image/star.svg">
+                            <img src="image/star.svg">
+                            <img src="image/star.svg">
+                        </div>
+                    </div>
             </div>
-        </section>
+        </div>
+    </section>
 </section>
 
 
@@ -248,26 +258,34 @@
 
 
     <section>
-        <h2>Activité  à Marseille</h2>
+        <h2 id="Activité">Activité  à Marseille</h2>
         <div class="activité">
             <div class="activité-cadre">
                 <img src="image/Images Booki/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" class="img-activité">
-                <p>Vieux-Port</p>
+                <div class="activité-titre">
+                    <p>Vieux-Port</p>
+                </div>
             </div>
 
             <div class="activité-cadre">
                 <img src="image/Images Booki/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" class="img-activité">
-                <p>Fort de pomégues</p>
+                <div class="activité-titre">
+                    <p>Fort de pomégues</p>
+                </div>
             </div class="activité-cadre">
 
             <div class="activité-cadre">
                 <img src="image/Images Booki/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" class="img-activité">
-                <p>Parc nationale des calanques</p>
+                <div class="activité-titre">
+                    <p>Parc nationale des calanques</p>
+                </div>
             </div>
 
             <div class="activité-cadre">
                 <img src="image/Images Booki/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" class="img-activité">
-                <p>Notre-dame-de-la-Garde</p>
+                <div class="activité-titre">
+                    <p>Notre-dame-de-la-Garde</p>
+                </div>
             </div>
         </div>      
         <!--pour cette section je suis pas sur au niveau du CSS-->
