@@ -5,7 +5,7 @@ header {
 
 
 body {
-    padding-left: 10px;
+    padding-left: 32px;
     padding-right: 10px;
     margin-left: 20px;
     margin-right: 20px;
@@ -13,7 +13,7 @@ body {
 
 h1 {
     font-size: 2em;
-    font-family:'Montserrat', sans-serif;
+  
 }
 
 p {
@@ -49,9 +49,8 @@ nav a:hover {
     border-top: 3px solid blue;
     border-spacing: 10px;
     padding-top: 40px;
-    
-
 }
+
 
 .annonce {
     margin-left: 24px;
@@ -66,8 +65,10 @@ nav a:hover {
     justify-content:center ;
     margin-left: 10px;
     margin-top: 42px;
-    width: 488px;
-    height: 58px;
+    width: 469px;
+    height: 67px;
+    background-color: #F2F2F2;
+    border-radius: 18px 18px 18px  18px;
 }
 .logo-recherche {
     display: flex;
@@ -75,8 +76,6 @@ nav a:hover {
     align-items: center;
     height: 58px;
     width: 50px;
-    border-radius: 18px 0px 0px 18px;
-    background-color: #D9D9D9;
 }
 
 input[type='submit'] {
@@ -86,10 +85,12 @@ input[type='submit'] {
     font-size: 1.2em;
     width: 163px;
     height: 58px;
+    border: none;
 }
 input {
     width: 240px;
     height: 58px;
+    border: none;
 }
 
 
@@ -98,7 +99,7 @@ input {
     gap: 30px;
     margin-top: 64px;
     margin-bottom: 80px;
-    margin-left: 30px;
+    
 
 }
 
@@ -121,7 +122,7 @@ input {
 .hébergement-cadre {
     border-radius: 20px 20px 20px 20px;
     background-color:#F2F2F2;
-    height: 658px;
+    height: 686px;
     width: 1149px;
     flex-wrap: wrap;
     
@@ -154,7 +155,7 @@ input {
 
 .populaire-cadre {
     width: 620px;
-    height: 658px;
+    height: 686px;
     border-radius: 13px 13px 13px 13px;
     background-color: #F2F2F2;
     
@@ -191,6 +192,13 @@ input {
     gap: 10px;
 }
 
+.populaire-cadre h2 {
+    margin-left: 84px;
+}
+.hébergement-cadre h2 {
+    margin-left: 84px;
+}
+
 .hé-po {
     display: flex;
     justify-content: space-between;
@@ -203,7 +211,10 @@ input {
     flex-direction: row;
     gap: 49px;
     margin-left:50px;
+}
 
+.activité h2 {
+    font-size: 2em;
 }
 
 .img-activité {
@@ -217,6 +228,9 @@ input {
     border-radius: 18px 18px 18px 18px;
     background-color: white;
     box-shadow:0px 23px 40px rgba(0, 0, 0, 0.27);
+}
+.activité-cadre p {
+    font-size: 1.2em;
 }
 
 .activité-titre {
