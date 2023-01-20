@@ -14,9 +14,13 @@
     <header>
         <nav>
                 <img src="image/logo.svg" alt="logo" class="logo-nav">
-            <div>
-                <a href="#Hébergement">Hébergement</a>
-                <a href="#Activité">Activité</a>
+            <div class="lien-nav">
+                <div class="nav-seul1">
+                    <a href="#Hébergement">Hébergement</a>
+                </div>
+                <div class="nav-seul2">
+                    <a href="#Activité">Activité</a>
+                </div>
             </div>
         </nav>
     </header>
@@ -29,22 +33,29 @@
         <!-- je pense que c'est la meilleurs solution sur cette section-->
     </section>
     
-    <section class="recherche">
-        <div class="logo-recherche">
-            <img src="image/map.svg" alt="photo">
-        </div>
-        <form action="input" method="get">
-            <label for="recherche"></label>
-            <input type="search" name="recherche" id="recherche" required>
-            <input type="submit" value="Recherche">
-        </form>
-        <!-- j'ai m'y la classe sur la section a voir ci c'est bon comme ça -->
-    </section>
+    <div class="ens-recherche">
+        <section class="recherche">
+        
+            <div class="logo-recherche">
+                <img src="image/map.svg" alt="photo" class="img-map">
+            </div>
+            <form action="input" method="get">
+                <label for="recherche"></label>
+                <input type="search" name="recherche" id="recherche" required>
+                <input type="submit" value="Recherche">
+            </form>
+            <div class="logo-loupe">
+                <img src="image/loupe.svg" alt="logo d'une loupe" class="img-loupe">
+            </div>
+            <!-- j'ai m'y la classe sur la section a voir ci c'est bon comme ça -->
+        </section>
+    </div>
 
     <section>
       
         <div class="filtre"> 
             <h2>Filtres</h2>
+            <div class="filtre-group">
                 <div class="filtre-icon">
                     <img src="image/dolars.svg" alt="photo">
                         <a href="" >Économique </a>
@@ -54,6 +65,8 @@
                     <img src="image/famille.svg" alt="photo">
                         <a href="">Familial</a>
                 </div>
+            </div>
+            <div class="filtre-group">
 
                 <div class="filtre-icon">
                     <img src="image/coeur.svg" alt="photo">
@@ -64,11 +77,13 @@
                     <img src="image/animaux.svg" alt="photo">
                         <a href="">Animaux autorisés</a>
                 </div>
+            </div>
         </div>
     </section>
         <!--J'ai crée plusieur div pour pouvoir par la suite mieux les agencé avec le css -->
-
+    <div class="info-ville">
         <p>Plus de 500 logements sont disponibles dans cette ville</p>
+    </div>
 
     <section class="hé-po">
         <section class="hébergement-cadre">
