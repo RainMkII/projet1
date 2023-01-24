@@ -9,6 +9,9 @@ body {
     padding-right: 10px;
     margin-left: 20px;
     margin-right: 20px;
+    font-family: 'Raleway', sans-serif;
+
+
 }
 
 h1 {
@@ -79,6 +82,10 @@ nav a {
 }
 
 
+.ens-recherche1 {
+    display: none;
+}
+
 .recherche {
     display: flex;
     flex-direction: row;
@@ -128,8 +135,7 @@ input {
     gap: 30px;
 }
 
-
-.filtre-icon {
+.filtre-icon-eco {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,13 +143,71 @@ input {
     border: 3px solid #D9D9D9;
     font-size: 1.2em;
     font-weight: 900;
-    width: 211px;
+    width: 196px;
+    height: 56px;
+    gap: 13px;
+}
+.filtre-icon-fam {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px 30px 30px 30px ;
+    border: 3px solid #D9D9D9;
+    font-size: 1.2em;
+    font-weight: 900;
+    width: 160px;
+    height: 56px;
+    gap: 13px;
+}
+.filtre-icon-rom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px 30px 30px 30px ;
+    border: 3px solid #D9D9D9;
+    font-size: 1.2em;
+    font-weight: 900;
+    width: 191px;
+    height: 56px;
+    gap: 13px;
+}
+.filtre-icon-ani {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px 30px 30px 30px ;
+    border: 3px solid #D9D9D9;
+    font-size: 1.2em;
+    font-weight: 900;
+    width: 223px;
     height: 56px;
     gap: 13px;
 }
 .filtre-icon:hover {
     background-color: #DEEBFF;
 }
+
+.info-ville {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+}
+
+.logo-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 31px 31px 31px 31px;
+    border: 3px solid gray;
+    width: 41px;
+    height: 41px;
+}
+
+.img-info {
+    height: 24px;
+}
+
 
 .hébergement-cadre {
     border-radius: 20px 20px 20px 20px;
@@ -184,6 +248,11 @@ input {
     height: 686px;
     border-radius: 13px 13px 13px 13px;
     background-color: #F2F2F2;
+}
+
+.pop-vectoriel {
+    display: flex;
+    gap: 220px;
     
 }
 
@@ -225,7 +294,7 @@ input {
     margin-left: 84px;
 }
 
-.hé-po {
+.he-po {
     display: flex;
     justify-content: space-between;
     margin-bottom: 115px;
@@ -341,16 +410,26 @@ footer {
     font-size: 1.2em;
    }
 
+   .annonce {
+    font-size: 1.5em;
+   }
+
+   .ens-recherche1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
     .recherche {
         display: flex;
         align-items: center;
-        width: 519px;
-        height: 76px;
+        width: 616px;
+        height: 84px;
+        border-radius: 31px 31px 31px 31px;
     }
 
     .ens-recherche {
-        display: flex;
-        justify-content: center;
+        display: none;
     }
 
     .recheche-box {
@@ -368,23 +447,28 @@ footer {
     }
 
     .img-loupe {
-        
+        position: absolute;
+        left: -6px;
+        top: -14px;
+        width: 30px;
+        height: 30px;
     }
     
     form{ 
         display: flex;
         justify-content: center;
-        
-        height: 76px;
+        width: 558px;
+        height: 79px;
     }
 
     input[type='submit'] {
-        width: 81px;
-        height: 77px;
+        border-radius: 0px 31px 31px 0px;
+        width: 88px;
+        height: 82px;
     }
     input[type='search'] {
-        width: 360px;
-        height: 77px;
+        width: 502px;
+        height: 84px;
     }
     
 
@@ -400,11 +484,60 @@ footer {
     .filtre {
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
+
+    .filtre-texte {
+        margin-left: 50px;
+        font-size: 1.5em;
+
+
+    }
+
     .filtre-group {
         display: flex;
         flex-direction: row;
+        justify-content: center;
+    }
+
+    .filtre-icon-eco {
+        border-radius: 41px 41px 41px 41px ;
+        border: 3px solid #D9D9D9;
+        font-size: 1.2em;
+        font-weight: 900;
+        width: 290px;
+        height: 78px;
+        font-size: 1.6em;
+        
+    }
+    .filtre-icon-fam {
+        border-radius: 41px 41px 41px 41px ;
+        border: 3px solid #D9D9D9;
+        font-size: 1.2em;
+        font-weight: 900;
+        width: 290px;
+        height: 78px;
+        font-size: 1.6em;
+       
+    }
+    .filtre-icon-rom {
+        border-radius: 41px 41px 41px 41px ;
+        border: 3px solid #D9D9D9;
+        font-size: 1.2em;
+        font-weight: 900;
+        width: 290px;
+        height: 78px;
+        font-size: 1.6em;
+       
+    }
+    .filtre-icon-ani {
+        border-radius: 41px 41px 41px 41px ;
+        border: 3px solid #D9D9D9;
+        font-size: 1.2em;
+        font-weight: 900;
+        width: 290px;
+        height: 78px;font-size: 1.6em;
+        
+    
     }
 
     .info-ville{
@@ -412,22 +545,95 @@ footer {
         align-items: center;
         justify-content: center;
         margin-bottom: 50px;
+        gap: 20px;
     }
 
-    .hé-po {
+    .logo-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 31px 31px 31px 31px;
+        border: 3px solid gray; 
+        width: 36px;
+        height: 36px;
+        margin-left: 10px;
+        font-size: 1.1em;
+    }
+    .img-info {
+        height: 20px;
+    }
+
+    .he-po {
         display: flex;
         flex-direction: column-reverse;
     }
 
+    .text-he {
+        display: flex;
+       padding-right: 75px;
+        font-size: 2em;
+        
+    }
+
+
+    .pop-vectoriel {
+        display: flex;
+        align-items: center;
+        gap: 220px;
+        margin-top: 18px;
+        margin-bottom: 18px;
+        font-size: 1.5em;
+    }
+
+    .img-vector {
+        width: 45px;
+        height: 45px;
+    }
+
+    
     .populaire-cadre {
         width: 756px;
-        height: 686px;
+        height: 989px;
         border-radius: 0px 0px 0px 0px;
+        margin-bottom: 84px;
+    }
+
+
+    .pop-contenue {
+        gap: 29px;
+    }
+
+    .pop-contenue2 {
+        gap: 87px;
+        font-size: 1.5em;
+    }
+
+    .pop-centre {
+        width: 589px;
+        height: 240px;
+        border-radius: 31px 31px 31px 31px;
+    }
+
+    .img-pop {
+        width: 245px;
+        height: 237px;
+        border-radius: 28px 0px 0px 28px;
     }
 
     .hébergement {
         width: 600px;
-        height: 400px;
+        height: 344px;
+        border-radius: 37px 37px 37px 37px;
+        border: 7px solid white;
+    }
+
+    .he-texte {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5em;
+        margin-top: 10px;
+        margin-left: 19px;
+        gap: 20px;
     }
 
     .hébergement-cadre {
@@ -436,17 +642,23 @@ footer {
         align-items: center;
         background-color: white;
         width: 756px;
-        height: 2800px; ;
+        height: 2465px;
     }
     .flex-hé {
         display: flex;
         flex-direction: column;
         align-items:flex-start;
+        gap: 29px;
     }
 
     .image-hé {
         width: 600px;
-        height: 318px;
+        height: 220px;
+        border-radius: 31px 31px 0px 0px;
+    }
+
+    .afficher-plus {
+        display: none;
     }
 
     .activité {
@@ -455,6 +667,12 @@ footer {
         align-items: center;
         margin-left: 0px;
     }
+
+    .activité-ma {
+        margin-left: 77px;
+        font-size: 2em;
+    }
+
 
     .img-activité {
         width: 600px;
@@ -495,7 +713,7 @@ footer {
     .filtre-group {
         width: 337px;
     }
-    .hé-po {
+    .he-po {
         display: flex;
         flex-direction: column;
         gap: 50px;
@@ -530,6 +748,55 @@ footer {
 
     }
 
+    .filtre-icon-eco {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px 30px 30px 30px ;
+        border: 3px solid #D9D9D9;
+        font-size: 1.2em;
+        font-weight: 900;
+        width: 196px;
+        height: 56px;
+        gap: 13px;
+    }
+    .filtre-icon-fam {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px 30px 30px 30px ;
+        border: 3px solid #D9D9D9;
+        font-size: 1.2em;
+        font-weight: 900;
+        width: 160px;
+        height: 56px;
+        gap: 13px;
+    }
+    .filtre-icon-rom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px 30px 30px 30px ;
+        border: 3px solid #D9D9D9;
+        font-size: 1.2em;
+        font-weight: 900;
+        width: 266px;
+        height: 56px;
+        gap: 13px;
+    }
+    .filtre-icon-ani {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px 30px 30px 30px ;
+        border: 3px solid #D9D9D9;
+        font-size: 1.2em;
+        font-weight: 900;
+        width: 223px;
+        height: 56px;
+        gap: 13px;
+        padding-left: 15px;
+    }
     .activité{
         gap: 26px;
         margin-left: 0px;
